@@ -3,68 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Social Links Profile</title>
-
-    <!-- FONTS -->
+    <title>Blog Priview card</title>
+    <!-- ICON -->
+    <link
+      rel="shortcut icon"
+      href="./image/icon-market.png"
+      type="image/x-icon"
+    />
+    <!-- STYLE -->
+    <link rel="stylesheet" href="./global-css/style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
-
-    <!-- FONTS END -->
-
-    <!-- STYLE -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <!-- STYLE END -->
   </head>
   <body>
-    <main class="main">
-      <section class="sec1">
+    <div class="main">
+      <section class="card-section1">
         <div class="card">
-          <!-- CARD IMAGE NAME -->
-          <div class="card__image-name">
+          <div class="card-head">
             <img
-              width="88"
-              height="88"
-              src="./image/card-image-head.svg"
+              style="width: 336"
+              height="200"
+              src="./image/card-image.svg  "
               alt=""
+              class="card__image"
             />
-            <div class="card__head-information">
-              <h1 class="card__name-head">Jussica Randall</h1>
-              <div class="card__address-london">
-                <a style="color: #c4f82a" href="#">London, United Kingdom</a>
-              </div>
-              <span class="card__front-end"
-                >"Front-end developer and avid reader."</span
-              >
-            </div>
           </div>
-          <!-- CARD IMAGE NAME END -->
-
-          <!-- ULS -->
-          <ul class="sitenav__list">
-            <li class="sitenav__item">
-              <a href="" class="sitenav__links">GitHub</a>
-            </li>
-            <li class="sitenav__item">
-              <a href="" class="sitenav__links">Frontend Mentor</a>
-            </li>
-            <li class="sitenav__item">
-              <a href="" class="sitenav__links">LinkedIn</a>
-            </li>
-            <li class="sitenav__item">
-              <a href="" class="sitenav__links">Twitter</a>
-            </li>
-            <li class="sitenav__item">
-              <a href="" class="sitenav__links">Instagram</a>
-            </li>
-          </ul>
-          <!-- ULS  END-->
+          <div class="card-section">
+            <a href="" class="card__head-link">Learning</a>
+            <span class="card__date">Published 21 Dec 2023</span>
+            <h1 class="card__title"><a href="#">HTML & CSS foundations</a></h1>
+            <p class="card__information">
+              These languages are the backbone of every website, defining
+              structure, content, and presentation.
+            </p>
+          </div>
+          <div class="card-footer">
+            <img
+              src="./image/card-footer-img.svg"
+              alt=""
+              class="card__footer-img"
+            />
+            <span class="card__footer-name">Greg Hooper</span>
+          </div>
         </div>
       </section>
-    </main>
+    </div>
   </body>
 </html>

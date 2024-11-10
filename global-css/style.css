@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  font-family: "Figtree", sans-serif;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4d04e;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.card-section {
+  flex-direction: column;
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+  justify-content: center;
+  align-items: center;
+  max-width: 1280px;
+  width: 384px;
+  height: 522px;
+  border: 1px solid #111111;
+  background-color: white;
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 8px 8px rgba(0, 0, 0, 1);
+  gap: 24px;
+}
+
+.card-head {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-section {
+  display: flex;
+  flex-direction: column;
+  width: 336px;
+  height: 194px;
+  margin: auto;
+
+  span {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #111111;
+  }
+
+  .card__title {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 36px;
+    margin-top: 12px;
+    text-decoration: none;
+
+    a {
+      color: black;
+      transition: 0.2s;
+
+      &:active {
+        cursor: pointer;
+        color: yellow;
+        opacity: 100%;
+      }
+    }
+  }
+
+  .card__information {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #7f7f7f;
+    margin-top: 12px;
+  }
+}
+
+.card__head-link {
+  width: 82px;
+  height: 29px;
+  background-color: #f4d04e;
+  color: #111111;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  padding: 4px 12px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Card Footer */
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 90%;
+
+  .card__footer-name {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 21px;
+    text-align: left;
+    color: #111111;
+  }
+}
